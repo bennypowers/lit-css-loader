@@ -9,7 +9,10 @@ module: {
   rules: [
     {
       test: /\.css$/,
-      loader: 'lit-css-loader'
+      loader: 'lit-css-loader',
+      options: {
+        import: 'lit' // defaults to lit-element
+      }
     }
   ]
 }
